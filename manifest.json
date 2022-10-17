@@ -1,0 +1,12 @@
+{
+    "name": "my-new-tab-page",
+    "manifest_version": 3,
+    "description": "My new tab page.",
+    "version": "0.0.1",
+    "permissions": [
+        "management"
+    ],
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+}

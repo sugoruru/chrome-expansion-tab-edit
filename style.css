@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+.sites{
+    width: 288px;
+    height: 192px;
+    background: #fff;
+    float: left;
+    margin: 35px;
+    transition: 0.2s all;
+}
+.sites:hover{
+    background: #eee;
+}
+.sites::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 1;
+    display: block;
+    position: relative;
+    top:46px;
+    left:94px;
+}
+.site{
+    width: 288px;
+    height: 192px;
+    background: #fff;
+    float: left;
+    margin: 35px;
+    border-radius: 3px;
+}
+.site:hover{
+    border:1px solid #000;
+    width: 286px;
+    height: 190px;
+}
+.sites > img{
+    width: 80px;
+    position: relative;
+    top:-42px;
+    left:104px;
+    z-index: 1;
+}
+#fade{
+    position: relative;
+    background: #000;
+    z-index: 1;
+    display: none;
+    opacity: 0;
+}
+#siteAddBox{
+    width: 42rem;
+    height: 600px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top:calc(50vh - 300px);
+    left:calc(50vw - 21rem);
+    z-index: 3;
+    display: none;
+}
+#siteAddBox > .flex > h1{
+    padding: 1.5rem 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+#siteAddBox > .flex > span{
+    position: relative;
+    line-height: 80px;
+    font-size: 2rem;
+}
+#siteAddBox > .flex > span:hover{
+    background: #eee;
+    cursor: default;
+}
+#siteAddBox > hr{
+    background: #000;
+    border: 1px solid #000;
+    size: 1;
+}
+#settings{
+    display: flex;
+    padding: 1rem;
+}
+#settings > label{
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+#settings > label > input{
+    height: 100%;
+    width: 19rem;
+    margin-right: 1rem;
+    outline: none;
+    transition: 0.5s all;
+    border: 1px solid #aaa;
+    padding: 0px 5px;
+}
+#settings > label > input:focus{
+    border: 1px solid #2563ed;
+}
+#uploadFile{
+    width: 20rem;
+    height: 10rem;
+    border: 1px solid #aaa;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+#uploadFile > form > label > input{
+    display: none;
+}
+#uploadFile > span:hover{
+    cursor: default;
+}
+#uploadFile > form > label > span{
+    font-size: 10rem;
+    width: 20rem;
+}
+#uploadImage{
+    position: relative;
+    left:calc(21rem - 150px);
+    top:5px;
+    border-style: none;
+    margin-bottom: 10px;
+}
+#siteAddBox > button{
+    width: 4rem;
+    height: 2rem;
+    background: #2563ed;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    font-size: 20px;
+    position: absolute;
+    top:calc(100% - 2.5rem);
+    left: calc(100% - 4.5rem);
+}
+#siteAddBox > button:hover{
+    background: #154ec9;
+}
+#siteContextMenu{
+    display:none;
+    position: absolute;
+    background: #fff;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+    border-radius: 5px;
+    width: 150px;
+    height: 300px;
+}
+#siteContextMenu > ul{
+    list-style: none;
+}
+#siteContextMenu{
+    cursor: default;
+}
+#siteContextMenu li:hover{
+    background-color: #ddd;
+    transition: background-color 200ms;
+}
+#siteContextMenu li{
+    padding: 3px;
+    font-size: 15px;
+}
+.flex{
+    display: flex;
+}
